@@ -20,3 +20,4 @@ MilesPerGallon = MilesDriven / GallonsOfGasUsed
 
 # display the result
 print("A car’s miles per gallon is : "+ str(MilesPerGallon) +' miles-per-gallon ')
+ 
