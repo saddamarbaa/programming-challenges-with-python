@@ -18,4 +18,4 @@ FahrenheitTemperature = ((9 / 5) * CelsiusTemperature) + 32
 
 # Display display the temperature converted to Fahrenheit
 print(str(CelsiusTemperature) + " Degree in Fahrenheit is : "+\
-      format(FahrenheitTemperature,".1f"))
+      format(FahrenheitTemperature,".1f")) 
