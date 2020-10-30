@@ -14,12 +14,11 @@ Reference:
 (1) Starting out with Python, Third Edition, Tony Gaddis Chapter 3
 (2) https://youtu.be/0qHWyPWhZO4
 """
-# give value
+# given  a package retails 
 package_price = 99
 # Get the User Input(the number of packages purchased) and Convert to int
 number_of_packages = int(input("Please Enter the number of packages"+\
                                "purchased : "))
-
 # check All the conditions
 if number_of_packages < 10:
     discount = 0
@@ -30,11 +29,13 @@ elif number_of_packages < 50:
 elif number_of_packages < 100:
     discount = 0.3  # 0.3 is 30% 
 else:
-    discount = 0.4  # 0.4 is 20%
+    discount = 0.4  # 0.4 is 40%
 # Calculate the discount amount and total amount
-total_amount = number_of_packages * package_price
-discount_amount = number_of_packages * discount
+sub_total = number_of_packages * package_price
+discount_amount = sub_total * discount
+total_amount = sub_total - discount_amount
 # Display the Result
-print("the amount of the discount is : $" + format(discount, ",.2f"))
+print("the amount of the discount is : $" + \
+      format(discount_amount, ",.2f"))
 print("total amount of the purchase after the discount is : $" + \
        format(total_amount, ",.2f"))
